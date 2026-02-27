@@ -15,14 +15,14 @@
   - Geolocation API를 활용한 현재 위치 기반 날씨 위젯 구현
   - TanStack Query를 사용한 비동기 데이터 요청, 캐싱 및 로딩 상태 관리
   - 데이터 로딩 전 Skeleton UI 적용으로 사용자 경험 개선
-  - Zustand를 활용한 다크모드 전역 상태 관리 및 LocalStorage 연동
+  - 다크모드 전역 상태 관리 및 LocalStorage 연동
   - 검색 결과(도시명)에 따른 상세 페이지 동적 라우팅 및 404 페이지 예외 처리
 
 ### 2차 개선 (Migration & Enhancement)
 - **기간**: 2026.02
 - **내용**
   - CRA → Vite 마이그레이션으로 빌드 속도 및 구조 최적화
-  - Github Actions 기반 CI 환경 구성 (TypeScript type check & ESLint 자동 실행)
+  - Github Actions 기반 CI 환경 구성 (TS 타입 체크 & ESLint 자동 실행)
   - 전체 프로젝트 구조 안정화 및 디렉토리 정리
 
 <br>
@@ -35,19 +35,21 @@
 
 | 스택/패키지  | 용도  |
 | --- | --- |
-| ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black) | 프로젝트 생성, 컴포넌트 기반 개발 |
-| ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=TypeScript&logoColor=white) | 정적 타입 검사, 안정적인 코드 작성 |
-| ![ReactQuery](https://img.shields.io/badge/React_Query-FF4154?style=flat&logo=reactquery&logoColor=white) | API 데이터 캐싱, 상태 관리  |
-| ![axios](https://img.shields.io/badge/Axios-5A29E4?style=flat&logo=axios&logoColor=white) | API 통신  |
-| ![tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat&logo=TailwindCSS&logoColor=white) | 빠른 UI 스타일링  |
-| ![vite](https://img.shields.io/badge/vite-646CFF?style=flat&logo=vite&logoColor=white) | 빠른 빌드, 개발 서버 제공 |
-| `react-router-dom` | 라우팅 (메인 페이지 ↔ 상세 페이지) |
-| `react-icons`  | 메인+상세 페이지 - 아이콘  |
-| `date-fns`  | 상세 페이지 - 날짜 포맷팅 및 비교 (오늘 날짜, 5일치 예보용) |
-| `react-loading-skeleton` | 상세 페이지 - 스켈레톤 UI |
-| `OpenWeatherMap API` | 날씨 데이터 출력 |
-| `Geolocation API` | 현재 위치 받아오기 |
-| ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white) | 배포 |
+| ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black) | 컴포넌트 기반 UI 개발 및 SPA 구조 구현 |
+| ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=TypeScript&logoColor=white) | 정적 타입 검사를 통한 안정적인 코드 작성 |
+| ![ReactQuery](https://img.shields.io/badge/React_Query-FF4154?style=flat&logo=reactquery&logoColor=white) | 서버 상태 관리 및 API 데이터 캐싱 |
+| ![axios](https://img.shields.io/badge/Axios-5A29E4?style=flat&logo=axios&logoColor=white) | REST API 통신 및 요청 처리 |
+| ![tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat&logo=TailwindCSS&logoColor=white) | 유틸리티 기반 반응형 UI 스타일링 |
+| ![vite](https://img.shields.io/badge/vite-646CFF?style=flat&logo=vite&logoColor=white) | 빠른 개발 서버 및 번들링 환경 구성 |
+| `react-router-dom` | 페이지 라우팅 및 SPA 네비게이션 관리 |
+| `react-icons`  | UI 아이콘 구성 |
+| `date-fns`  | 날짜 포맷팅 및 예보 데이터 처리 |
+| `react-loading-skeleton` | 로딩 상태 UX 개선을 위한 스켈레톤 UI |
+| `OpenWeatherMap API` | 실시간 날씨 및 예보 데이터 제공 |
+| `Geolocation API` | 사용자 현재 위치 정보 조회 |
+| ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat&logo=eslint&logoColor=white) | 코드 스타일 통일 및 잠재적 오류 사전 검출 |
+| ![GitHub Actions](https://img.shields.io/badge/Github_Actions-2088FF?style=flat&logo=githubactions&logoColor=white) | TypeScript 검사 및 ESLint 자동 실행 CI 환경 구축 |
+| ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white) | 자동 빌드 및 배포 환경 제공 |
 
 <br>
 
