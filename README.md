@@ -27,7 +27,7 @@
 
 <br>
 
-## [3. 주요 기능 및 페이지 구성](https://github.com/hjinn0813/nimbus/wiki/Step-01.-%EA%B8%B0%ED%9A%8D-%EB%B0%8F-%EC%B4%88%EA%B8%B0-%EC%84%B8%ED%8C%85)
+## [3. 주요 기능 및 페이지 구성](https://github.com/yjinn0813/nimbus/wiki/Step-01.-%EA%B8%B0%ED%9A%8D-%EB%B0%8F-%EC%B4%88%EA%B8%B0-%EC%84%B8%ED%8C%85)
 
 <br>
 
@@ -53,7 +53,7 @@
 
 <br>
 
-## [5. 개발 기록 아카이빙](https://github.com/hjinn0813/nimbus/wiki/Step-01.-%EA%B8%B0%ED%9A%8D-%EB%B0%8F-%EC%B4%88%EA%B8%B0-%EC%84%B8%ED%8C%85)
+## [5. 개발 기록 아카이빙](https://github.com/yjinn0813/nimbus/wiki/Step-01.-%EA%B8%B0%ED%9A%8D-%EB%B0%8F-%EC%B4%88%EA%B8%B0-%EC%84%B8%ED%8C%85)
 
 <br>
 
