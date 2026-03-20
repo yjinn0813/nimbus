@@ -108,5 +108,6 @@
  ┣ 📜postcss.config.cjs
  ┣ 📜tailwind.config.cjs
  ┣ 📜tsconfig.json
+ ┣ 📜vercel.json
  ┗ 📜vite.config.ts
 ```
