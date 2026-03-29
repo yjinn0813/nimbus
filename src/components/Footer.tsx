@@ -23,7 +23,7 @@ const footerLinks = [
     Icon: IoBookmark,
   },
   {
-    href: "mailto: hjc3790@gmail.com",
+    href: "mailto: yjinn0813@gmail.com",
     label: "send email",
     Icon: MdEmail,
   }
