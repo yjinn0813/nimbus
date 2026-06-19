@@ -64,7 +64,7 @@ jobs:
             $DISCORD_WEBHOOK_URL
 
       - name: Discord Notify - WARN
-        if: steps.audit.outputs.issues != ''
+        if: steps.audit.outputs.issues != '' && success()
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
