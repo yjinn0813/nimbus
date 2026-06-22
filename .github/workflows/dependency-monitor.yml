@@ -2,7 +2,7 @@ name: Dependency Monitor for nimbus
 
 on:
   schedule: 
-    - cron: '0 4 * * 1' #KST 월요일 13:00
+    - cron: '0 22 * * 0' #KST 월요일 07:00
   workflow_dispatch:
 
 jobs:
