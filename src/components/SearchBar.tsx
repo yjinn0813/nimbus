@@ -29,7 +29,7 @@ export default function SearchBar() {
           value={query}
           onChange={e => setQuery(e.target.value)}
           onKeyDown={onKeyDown}
-          className='pl-4 pr-10 py-2 w-full border-2 border-main_color rounded-full focus:outline-none dark:bg-gray-900'/>
+          className='pl-4 pr-10 py-2 w-full border-2 border-main_color rounded-full focus:outline-hidden dark:bg-gray-900'/>
         <IoSearch className="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer"
           onClick={handleSearch}/>
       </div>
