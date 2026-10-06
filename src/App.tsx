@@ -4,13 +4,13 @@ import Footer from './components/Footer';
 import Main from './pages/Main';
 import Detail from './pages/Detail';
 import NotFound from './pages/NotFound';
-import './styles/global.css';
+import './global.css';
 
 export default function App() {
   return (
     <div id='container' className='flex flex-col min-h-screen'>
       <Header />
-      <div id='wrap' className='flex-grow flex flex-col'>
+      <div id='wrap' className='grow flex flex-col'>
         <Routes>
           <Route path='/' element={<Main />} />
           <Route path='/detail/:city' element={<Detail />} />
