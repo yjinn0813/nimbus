@@ -90,11 +90,10 @@
  ┃ ┃ ┣ 📜Detail.tsx
  ┃ ┃ ┣ 📜Main.tsx
  ┃ ┃ ┗ 📜NotFound.tsx
- ┃ ┣ 📂styles
- ┃ ┃ ┗ 📜global.css
  ┃ ┣ 📂utils
  ┃ ┃ ┗ 📜formatDate.ts
  ┃ ┣ 📜App.tsx
+ ┃ ┣ 📜global.css
  ┃ ┣ 📜images.d.ts
  ┃ ┣ 📜main.tsx
  ┃ ┗ 📜queryClient.tsx

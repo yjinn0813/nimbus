@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Pretendard', sans-serif;
+  --color-main_color: #16a34a;        /* emerald-600 */
+  --color-sub_color: #84cc16;         /* lime-500 */
+  --color-error: #f43f5e;             /* rose-400 */
+  --color-text_primary: #1e293b;      /* slate-800 */
+  --color-text_secondary: #6b7280;    /* slate-500 */
+  --breakpoint-xs: 30rem;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/fonts/PretendardStdVariable.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+html { transition: background-color 0.3s ease; }
+
+body {
+  font-family: 'Pretendard', sans-serif;
+  @apply bg-slate-100 text-gray-900;
+}
+
+body.dark { @apply bg-gray-900 text-slate-100; }

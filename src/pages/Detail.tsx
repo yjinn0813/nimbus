@@ -16,7 +16,7 @@ export default function Detail() {
   if (!city) return <p>도시명을 찾을 수 없습니다.</p>;
   if (isLoading) {
     return (
-      <div className="p-4 rounded-lg shadow bg-white dark:bg-gray-800">
+      <div className="p-4 rounded-lg shadow-sm bg-white dark:bg-gray-800">
         <Skeleton height={30} width={200} className="mb-2" />
         <Skeleton height={20} width={150} className="mb-1" />
         <Skeleton height={20} width={180} className="mb-1" />
@@ -27,7 +27,7 @@ export default function Detail() {
   if (error || !weather) return <p>현재 날씨를 불러오지 못했습니다.</p>;
 
   return (
-    <div className='flex flex-col items-center w-[100%]'>
+    <div className='flex flex-col items-center w-full'>
       <h1 
         className="text-3xl font-bold mt-10 cursor-pointer"
         title="네이버 날씨로 이동"
@@ -41,7 +41,7 @@ export default function Detail() {
       <WeatherCard city={city}/>
 
       {/* 디테일 페이지 전용 현재 날씨 상세 */}
-      <div className="w-[80%] mt-8 p-4 rounded-lg shadow bg-white dark:bg-gray-800">
+      <div className="w-[80%] mt-8 p-4 rounded-lg shadow-sm bg-white dark:bg-gray-800">
         <h2 className="text-2xl font-semibold mb-4 xs:text-xl">현재 날씨 상세 정보</h2>
         <div className="flex flex-col py-2">
           <div className='flex flex-row justify-around my-3'>

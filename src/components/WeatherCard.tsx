@@ -15,7 +15,7 @@ export default function WeatherCard({ city, coords, onClick }: WeatherCardProps)
 
   if (isLoading){
     return (
-      <div className="p-4 rounded-lg shadow bg-white dark:bg-gray-800">
+      <div className="p-4 rounded-lg shadow-sm bg-white dark:bg-gray-800">
         <Skeleton height={30} width={150} />
         <Skeleton height={80} width={80} circle />
         <Skeleton height={20} count={2} />
@@ -32,7 +32,7 @@ export default function WeatherCard({ city, coords, onClick }: WeatherCardProps)
   const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
 
   return (
-    <div className="flex flex-col mt-10 w-[80%] px-5 py-6 rounded-lg shadow bg-white dark:bg-gray-800 cursor-pointer"
+    <div className="flex flex-col mt-10 w-[80%] px-5 py-6 rounded-lg shadow-sm bg-white dark:bg-gray-800 cursor-pointer"
       onClick={() => onClick?.(weather.name)}>
       <div className='text-xl'>{weather.name}</div>
       <div className='flex flex-row items-end justify-between'>
@@ -40,7 +40,7 @@ export default function WeatherCard({ city, coords, onClick }: WeatherCardProps)
           <div className='text-2xl'>{weather.weather[0].description}</div>
           <div className='text-6xl mt-2 xs:text-5xl'>{Math.round(weather.main.temp - 273.15)}°C</div>
         </div>
-        <img className='w-[120px] h-[120px]' src={iconUrl} alt={weather.weather[0].description} />
+        <img className='w-30 h-30' src={iconUrl} alt={weather.weather[0].description} />
       </div>
     </div>
   )

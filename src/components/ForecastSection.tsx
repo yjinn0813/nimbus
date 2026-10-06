@@ -18,7 +18,7 @@ export default function ForecastSection({ city }: ForecastProps) {
 
   if (isLoading){
     return (
-      <div className="p-4 rounded-lg shadow bg-white dark:bg-gray-800">
+      <div className="p-4 rounded-lg shadow-sm bg-white dark:bg-gray-800">
         <Skeleton height={30} width={150} />
         <Skeleton height={80} width={80} circle />
         <Skeleton height={20} count={2} />
@@ -43,7 +43,7 @@ export default function ForecastSection({ city }: ForecastProps) {
   }
 
   return (
-    <div className="mt-8 w-[80%] p-4 rounded-lg shadow bg-white dark:bg-gray-800">
+    <div className="mt-8 w-[80%] p-4 rounded-lg shadow-sm bg-white dark:bg-gray-800">
       <h2 className="text-2xl font-semibold mb-4 xs:text-xl">{city} 5일 예보</h2>
 
       {Object.entries(forecastByDate).map(([date, forecasts]) => (
