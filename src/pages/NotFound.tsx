@@ -3,8 +3,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import cryingFace from '../assets/crying-face.png';
+import useTitle from '../hooks/useTitle';
 
 export default function NotFound() {
+  useTitle('Page Not Found');
+
   return (
     <div className='flex flex-col items-center justify-center flex-1'>
       <img src={cryingFace} alt="cry" className='w-11 h-11 mb-5' />
