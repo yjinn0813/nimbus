@@ -4,16 +4,19 @@ import { useParams } from 'react-router-dom';
 import WeatherCard from '../components/WeatherCard';
 import ForecastSection from '../components/ForecastSection';
 import useWeather from '../hooks/useWeather';
+import useTitle from '../hooks/useTitle';
+import NotFound from './NotFound';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 
 export default function Detail() {
   const { city } = useParams<{ city: string }>();
+  useTitle(city);
 
   // city가 있으면 훅 호출
   const { data: weather, isLoading, error } = useWeather({ city })
 
-  if (!city) return <p>도시명을 찾을 수 없습니다.</p>;
+  if (!city) return <NotFound />;
   if (isLoading) {
     return (
       <div className="p-4 rounded-lg shadow-sm bg-white dark:bg-gray-800">
@@ -24,7 +27,7 @@ export default function Detail() {
       </div>
     );
   }
-  if (error || !weather) return <p>현재 날씨를 불러오지 못했습니다.</p>;
+  if (error || !weather) return <NotFound />;
 
   return (
     <div className='flex flex-col items-center w-full'>

@@ -68,8 +68,10 @@
  ┃ ┃ ┣ 📜favicon-16x16.png
  ┃ ┃ ┣ 📜favicon-32x32.png
  ┃ ┃ ┗ 📜favicon.ico
- ┃ ┗ 📂fonts
+ ┃ ┣ 📂fonts
  ┃ ┃ ┗ 📜PretendardStdVariable.woff2
+ ┃ ┣ 📂images
+ ┃ ┃ ┗ 📜og_image.png
  ┣ 📂src
  ┃ ┣ 📂assets
  ┃ ┃ ┗ 📜crying-face.png
@@ -85,6 +87,7 @@
  ┃ ┃ ┗ 📜default.ts
  ┃ ┣ 📂hooks
  ┃ ┃ ┣ 📜useForecast.tsx
+ ┃ ┃ ┣ 📜useTitle.tsx
  ┃ ┃ ┗ 📜useWeather.tsx
  ┃ ┣ 📂pages
  ┃ ┃ ┣ 📜Detail.tsx
@@ -104,8 +107,6 @@
  ┣ 📜index.html
  ┣ 📜package-lock.json
  ┣ 📜package.json
- ┣ 📜postcss.config.cjs
- ┣ 📜tailwind.config.cjs
  ┣ 📜tsconfig.json
  ┣ 📜vercel.json
  ┗ 📜vite.config.ts
